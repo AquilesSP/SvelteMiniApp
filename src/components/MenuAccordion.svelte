@@ -1,13 +1,14 @@
 <script>
-  export let menu = [];
 
-  // Usa un solo índice para controlar la sección abierta (una sola a la vez)
-  let openIndex = null;
+  const { menu = [] } = $props(); 
+  console.log(':D menu: ', menu);  // Verifica que los datos están llegando al componente
+  let openIndex = $state(0);
 
   function toggleSection(index) {
     openIndex = openIndex === index ? null : index;
   }
 </script>
+
 
 <style>
   .section {

@@ -129,6 +129,6 @@
   <Navbar />
   <HeroImage />
   <ActionButtons />
-  <MenuAccordion {menu} />
+  <MenuAccordion menu={menu} />
 
 </div>
